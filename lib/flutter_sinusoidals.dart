@@ -419,7 +419,6 @@ abstract class _BaseWaveWidgetState<T extends _BaseWaveWidget> extends State<T>
     _timeController = AnimationController(
       vsync: this,
       upperBound: 2 * _tau,
-      animationBehavior: AnimationBehavior.preserve,
       duration: Duration(milliseconds: widget.period ?? 5000),
     );
     _timeController!.repeat();
